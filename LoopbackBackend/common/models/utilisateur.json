@@ -1,0 +1,24 @@
+{
+  "name": "Utilisateur",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "articles": {
+      "type": "hasMany",
+      "model": "Article",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

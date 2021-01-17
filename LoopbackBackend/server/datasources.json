@@ -1,0 +1,26 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "local-storage": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "ShopingDeu",
+    "username": "",
+    "password": "",
+    "name": "local-storage",
+    "connector": "loopback-component-storage-mongo"
+  },
+  "DeuxiemeDatasource": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "ShopingDeu",
+    "password": "",
+    "name": "DeuxiemeDatasource",
+    "user": "",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  }
+}

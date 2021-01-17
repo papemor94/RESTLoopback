@@ -1,0 +1,28 @@
+Preambule  : 
+Installer nodeJs : npm  : https://nodejs.org/fr/
+Installer Loopback  : npm install -g loopback-cli    site  : https://loopback.io/index.html
+Installer Mongo DB  et ajouter la variable d'environnement dans path   : https://www.mongodb.com/try/download/community
+Installer le client Robo3T qui nous permettra de nous connecter à MongoDb : https://robomongo.org/
+installer ionic : npm install -g ionic
+installer cordova  : npm install -g cordova
+
+1) 	API REST
+
+- lb seulement pour creer une nouvelle application loopback
+Une fois que le projet est cree 
+pour regler le probleme de demarrage du serveur loopback 
+- dans le fichier server que tout se passe
+- avec lb model  : pour creer un nouveau modele
+- avec lb datasource  : on peut ajouter une base de donnees par exemple MongoDB  : utiliser le cmd et pas gitbash
+- ensuite lier le model au datasource  ( dans le fichier /server/model-config on remplace db par la datasource que l'on a cree
+Il est egalement possible preciser la datasource au moment de la creation du modele
+
+j'ai remplace node .  par la commande npm start . pour demarrer le server loopback
+
+
+- FRONT IONIC
+ionic start nomDeLapplication blank  : pour creer un nouveau projet ionic vide 
+ionic serve  : pour lancer le projet ionic dans le dossier du projer
+
+
+Le projet ionic dans test est liée au projet dans le bureau  Back porteDocument (loopback)
