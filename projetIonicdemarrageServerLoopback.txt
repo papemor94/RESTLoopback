@@ -19,6 +19,43 @@ Il est egalement possible preciser la datasource au moment de la creation du mod
 
 j'ai remplace node .  par la commande npm start . pour demarrer le server loopback
 
+--  coatainer d'images 
+
+-- installer le driver  : loopback-component-storage
+lb datasource 
+enter the datasource name  : local-storage 
+il va nous demander d'installer le driver si ce n'est pas encore fait : yes 
+-- Ensuite configurer les parametres du client driver dans le fichier Datasource.json comme suit 
+
+  "local-storage": {
+    "name": "local-storage",
+    "provider": "./filesystem",
+    "connector": "loopback-component-storage"
+    "root":"./server/storage/"
+  }
+
+
+//  
+-- ensuite va falloir creer le dossier storage s'il n'existe pas encore 
+
+
+-- creer le model Container et l'attacher a la datasource local-storage que l'on vient tout juste de creer 
+
+
+2    :  on pouvait utiliser egalement un stockage comme mongodb ou bien cloud(amazon , ....)
+- Pour mongodb 
+on va utiliser le connecteur suivant  : loopback-component-storage-mongo  ( ce local-storage est le plus fiable : DeuxiemeDataSource provoque des erreurs 
+si on change le connector pour l'affecter loopback-component-storage-mongo  et si on laisse a mongodb on pourra pas uploader des images 
+ensuite datasource.json 
+  "local-storage": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "ShopingDeu",
+    "username": "",
+    "password": "",
+    "name": "local-storage",
+    "connector": "loopback-component-storage-mongo"
+  },
 
 - FRONT IONIC
 ionic start nomDeLapplication blank  : pour creer un nouveau projet ionic vide 
@@ -26,3 +63,5 @@ ionic serve  : pour lancer le projet ionic dans le dossier du projer
 
 
 Le projet ionic dans test est liée au projet dans le bureau  Back porteDocument (loopback)
+
+---  lancer le projet ionoc et aller dans la page home 
